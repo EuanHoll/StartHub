@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StartHub.exe" size="494040">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StartHub.exe" size="1117144">
       <assemblyIdentity name="StartHub" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QzpcPXrsLI/pg5miRH2+YI3iiLLYFB9ZrtWPLRO2s7s=</dsig:DigestValue>
+        <dsig:DigestValue>VU4918+6+J9Tj6z8JiSXqMkK7kfgMxmWUl+cpz4gqlk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,6 +61,150 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>+MECx8haicalmmkPGNt0wkFtE3TmZENoDIt22WyiV4I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\audacity.png" size="86999">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hPh38nmtkM/gkL47x+XhcSfvtTLnuYkI0Lr1m3Qqeck=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\chrome.png" size="7048">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lSeFOiZzGKg3vpAoYAFN358h7Sii4huxOnWb2heI5tg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\discord.png" size="17685">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9ExfkumvIDqfm6rpi0VXIF4O2+fSuoPvjoGQSgUoUNY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\eclipse.png" size="45138">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c5ezK9njqy8lKd/gD6Ln53xTtYyAvsPyLlO1TMsENb0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\edge.png" size="32374">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/scd4G+e7cMWO59LtnlK/7/rYNVJFs9BilamyDPJ5CQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\excel.png" size="13578">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WV/0WakOAl4DgBzECwZQGTs5ze/DC0hwoQVpGo/IYX0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\firefox.png" size="93935">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wiu2owqGxbva4324pfsXGs/SZpRq3oDI/nVwdlvICUI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\internetexplorer.png" size="21010">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wJBWaqeC6Sd+se3D4oPSDeQQh51KzjlyLFylzpx9mbA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\itunes.png" size="25339">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dqpOIsk2LjCeorek+puP2gJBnW0cDqlt/WE+8Y8fBiw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\opera.png" size="10181">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sU8y52kYI2fxX2GLmONTaYdgUpyZR4Fj4WJRX7dDUbQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\outlook.png" size="53258">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dTBbJMVv9JxKJAlhs9Xf8/KinCpvb9CrHtRpXB9QfSI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\spotify.png" size="35315">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>laxz7KJvw4O1dmOpsKMbgQ5IJ630J4vtB2NBFnyNAog=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\steam.png" size="21940">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>V9+VzHpF24yeYjBqqhvomDpixbImDO6DChMp/oAxcvE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\twitch.png" size="2687">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0owzyls8Ra0fdXhZatDEDBAHTWIveP31vBL5ZVCSE4k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\visualstudio.png" size="17809">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Pt7lEtdiLoitgUaY3nBYfPsr0BKAgks7plJ30MKRa8I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\HighResLogos\word.png" size="16540">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oZaWf7it/J2ENphPvGINSdLXvvx1PEtMWX0Ki8YeyxM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\Logo.ico" size="115953">

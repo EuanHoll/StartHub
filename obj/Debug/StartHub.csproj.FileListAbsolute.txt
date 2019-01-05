@@ -15,3 +15,4 @@ F:\Visual Studio Projects\StartHub\StartHub\StartHub\obj\Debug\StartHub.applicat
 F:\Visual Studio Projects\StartHub\StartHub\StartHub\obj\Debug\StartHub.exe
 F:\Visual Studio Projects\StartHub\StartHub\StartHub\obj\Debug\StartHub.pdb
 F:\Visual Studio Projects\StartHub\StartHub\StartHub\obj\Debug\StartHub.csprojAssemblyReference.cache
+F:\Visual Studio Projects\StartHub\StartHub\StartHub\obj\Debug\StartHub.Resources.resources

@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,7 +26,7 @@ namespace StartHub
         {
             InitializeComponent();
             pro = new ProgramContainer(name, fileLoc, imgLoc);
-            this.textBox1.Text = name;
+            this.nameTextBox.Text = name;
             this.imgLocText.Text = imgLoc;
             this.imgLoc = imgLoc;
             this.exeLoc = fileLoc;
@@ -62,7 +63,15 @@ namespace StartHub
             using (OpenFileDialog openFileDialog1 = new OpenFileDialog())
             {
 
-                openFileDialog1.InitialDirectory = "c:\\";
+                if (imgLoc == "")
+                {
+                    openFileDialog1.InitialDirectory = "c:\\";
+                }
+                else
+                {
+                    openFileDialog1.InitialDirectory = imgLoc;
+                }
+
                 openFileDialog1.Filter = "Image Files |*.jpg;*.jpeg;*.png;*.gif;|exe Files|*.exe";
                 openFileDialog1.FilterIndex = 0;
                 openFileDialog1.RestoreDirectory = true;
@@ -80,8 +89,15 @@ namespace StartHub
         {
             using (OpenFileDialog openFileDialog1 = new OpenFileDialog())
             {
+                if (exeLoc == "")
+                {
+                    openFileDialog1.InitialDirectory = "c:\\";
+                }
+                else
+                {
+                    openFileDialog1.InitialDirectory = exeLoc;
+                }
 
-                openFileDialog1.InitialDirectory = "c:\\";
                 openFileDialog1.Filter = "exe Files (*.exe)|*.exe|jar Files (*.jar)|*.jar|All files (*.*)|*.*";
                 openFileDialog1.FilterIndex = 0;
                 openFileDialog1.RestoreDirectory = true;
@@ -92,6 +108,36 @@ namespace StartHub
                     programText.Text = exeLoc;
                     imgLoc = openFileDialog1.FileName;
                     imgLocText.Text = imgLoc;
+
+                    if(nameTextBox.Text == "")
+                    {
+                        string exe = exeLoc.Split('\\')[exeLoc.Split('\\').Length - 1];
+                        exe = Regex.Replace(exe, ".exe", "");
+                        exe = Regex.Replace(exe, ".jar", "");
+                        exe = Regex.Replace(exe, ".bat", "");
+                        exe = UtilMethods.FirstLetterToUpperCaseOrConvertNullToEmptyString(exe);
+                        nameTextBox.Text = exe;
+                    }
+
+                    FileEnum fileEnum = UtilMethods.hasHighQualityIcon(UtilMethods.getFileName(exeLoc));
+                    if (fileEnum != FileEnum.None)
+                    {
+
+                        DialogResult dialogResult = MessageBox.Show("Do you want to display a high quality icon for " + 
+                            UtilMethods.getNameFromFileEnum(fileEnum) + 
+                            " or not?", "High Quality Icon", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            imgLoc = "resources:" + UtilMethods.getImageNameFromFileEnum(fileEnum);
+                            imgLocText.Text = imgLoc;
+                        }
+                        else if (dialogResult == DialogResult.No)
+                        {
+                            //do something else
+                        }
+
+                    }
+
                 }
 
             }
@@ -99,7 +145,7 @@ namespace StartHub
 
         private void addProgram_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            if (nameTextBox.Text == "")
             {
                 MessageBox.Show("Please enter a name" + Environment.NewLine + "To cancel please select the x");
                 return;
@@ -120,8 +166,9 @@ namespace StartHub
                 UtilMethods.removeLine(pro.name, pro.fileLoc, pro.imgLoc);
             }
 
-            UtilMethods.addToFile(textBox1.Text, exeLoc, imgLoc);
+            UtilMethods.addToFile(nameTextBox.Text, exeLoc, imgLoc);
             this.Close();
         }
+
     }
 }

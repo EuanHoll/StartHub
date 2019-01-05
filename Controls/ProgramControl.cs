@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using StartHub.Utils;
 
 namespace StartHub.Controls
 {
@@ -20,14 +21,24 @@ namespace StartHub.Controls
         {
             InitializeComponent();
             name.Text = programName;
-            if (!imageLocation.EndsWith(".exe"))
+
+            if (!imageLocation.StartsWith("resources:"))
             {
-                pictureBox1.ImageLocation = imageLocation;
+                if (!imageLocation.EndsWith(".exe"))
+                {
+                    pictureBox1.ImageLocation = imageLocation;
+                }
+                else
+                {
+                    pictureBox1.Image = resizeImage(Icon.ExtractAssociatedIcon(imageLocation).ToBitmap(), new Size(pictureBox1.Width, pictureBox1.Height));
+                }
             }
             else
             {
-                pictureBox1.Image = resizeImage(Icon.ExtractAssociatedIcon(imageLocation).ToBitmap(), new Size(pictureBox1.Width, pictureBox1.Height));
+                pictureBox1.Image = UtilMethods.getBitMapFromResource(imageLocation);
             }
+
+
             this.programLoc = programLoc;
             this.programID = programID;
 
